@@ -9,17 +9,25 @@
 <body>
   <header class="hero">
     <h1>FOOD APP</h1>
-    <p>更快发现你想吃的美食。</p>
+    <p>输入地址或使用定位，查找附近美食（当前为无 Key 演示模式）。</p>
   </header>
 
   <main>
     <section class="search-section">
-      <input id="searchInput" type="text" placeholder="输入菜名或餐厅，例如：汉堡" />
-      <button id="searchBtn">搜索</button>
+      <input id="addressInput" type="text" placeholder="输入地址，例如：北京国贸" />
+      <button id="addressBtn">按地址找美食</button>
     </section>
 
+    <section class="search-section">
+      <input id="keywordInput" type="text" placeholder="筛选餐厅关键词，例如：川菜" />
+      <button id="searchBtn">关键词搜索</button>
+      <button id="nearbyBtn" class="secondary">使用我的定位</button>
+    </section>
+
+    <p id="status" class="status">先输入地址，或点击“使用我的定位”。</p>
+
     <section>
-      <h2>推荐菜单</h2>
+      <h2>餐厅列表</h2>
       <div id="menuGrid" class="grid"></div>
     </section>
   </main>
